@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:build="http://schemas.microsoft.com/developer/appx/2012/build" IgnorableNamespaces="build">
+
+  <Identity Name="d67a4619-cf03-449e-8610-e8ebdc211d8f" Version="1.0.0.0" Publisher="CN=oliverlo" />
+
+  <mp:PhoneIdentity PhoneProductId="d67a4619-cf03-449e-8610-e8ebdc211d8f" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+
+  <Properties>
+    <DisplayName>ng-Todo</DisplayName>
+    <PublisherDisplayName>oliverlo</PublisherDisplayName>
+    <Logo>images\StoreLogo.png</Logo>
+  </Properties>
+
+  <Prerequisites>
+    <OSMinVersion>6.3.1</OSMinVersion>
+    <OSMaxVersionTested>6.3.1</OSMaxVersionTested>
+  </Prerequisites>
+
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+
+        <m3:VisualElements DisplayName="ng-Todo" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png" Description="ng-Todo" ForegroundText="light" BackgroundColor="transparent">
+            <m3:DefaultTile Wide310x150Logo="images\Wide310x150Logo.png" Square71x71Logo="images\Square71x71Logo.png" />
+            <m3:SplashScreen Image="images\SplashScreen.png" />
+        </m3:VisualElements>
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <Capability Name="internetClientServer" />
+  </Capabilities>
+
+  <build:Metadata>
+    <build:Item Name="Blend" Version="12.0.50429.0" />
+  </build:Metadata>
+</Package>

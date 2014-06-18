@@ -1,0 +1,26 @@
+﻿<div class="todoItemView fragment">
+    <header aria-label="Header content" role="banner">
+        <h1 class="titlearea win-type-ellipsis">
+            <span class="pagetitle">Edit Todo Item</span>
+        </h1>
+    </header>
+    <section aria-label="Main content" role="main">
+        <div>
+            <form class="viewForm">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input id="title" placeholder="enter title" ng-model="itemTitle" type="text" />
+                </div>
+				<div class="form-group">
+					<label for="id">Item Id</label>
+					<input readonly id="id" ng-model="itemId" type="text" />
+				</div>
+            </form>            
+        </div>
+    </section>
+    
+    <win-app-bar>
+        <win-app-bar-command icon="'accept'" label="'ok'" ng-click="ok()"></win-app-bar-command>
+        <win-app-bar-command icon="'cancel'" label="'cancel'" ng-click="cancel()"></win-app-bar-command>
+    </win-app-bar>
+</div>

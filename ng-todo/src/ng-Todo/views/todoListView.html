@@ -1,0 +1,18 @@
+﻿<div class="todoListView fragment">
+    <header aria-label="Header content" role="banner">
+        <h1 class="titlearea win-type-ellipsis">
+            <span class="pagetitle">Todos</span>
+        </h1>
+    </header>
+    <section aria-label="Main content" role="main">
+
+        <win-list-view item-data-source="todoItems" oniteminvoked="itemClicked($event)">
+            <win-item-template>
+                <span>{{item.data.title}}</span>
+                <hr />
+            </win-item-template>
+            <win-list-layout></win-list-layout>
+        </win-list-view>
+
+    </section>
+</div>
